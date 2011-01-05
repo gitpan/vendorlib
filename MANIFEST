@@ -17,3 +17,4 @@ META.yml
 README
 t/01basic.t
 t/lib/Foo.pm
+t/pod.t

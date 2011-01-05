@@ -4,9 +4,9 @@ NAME
 SYNOPSIS
         #!/usr/bin/perl
 
+        use vendorlib;
         use strict;
         use warnings;
-        use vendorlib;
         use SomeModule; # will only search in core and vendor paths
         ...
 
