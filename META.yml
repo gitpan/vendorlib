@@ -1,0 +1,28 @@
+---
+abstract: 'Use Only Core and Vendor Libraries in @INC'
+author:
+  - 'Rafael Kitover, C<< <rkitover at cpan.org> >>'
+  - 'Rafael Kitover <rkitover@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.00'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: vendorlib
+no_index:
+  directory:
+    - inc
+    - t
+provides:
+  vendorlib:
+    file: lib/vendorlib.pm
+    version: 0.01
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

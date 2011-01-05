@@ -1,0 +1,67 @@
+NAME
+    vendorlib - Use Only Core and Vendor Libraries in @INC
+
+SYNOPSIS
+        #!/usr/bin/perl
+
+        use strict;
+        use warnings;
+        use vendorlib;
+        use SomeModule; # will only search in core and vendor paths
+        ...
+
+DESCRIPTION
+    In a system distribution such as Debian, it may be advisable for Perl
+    programs to ignore the user's CPAN-installed modules and only use the
+    distribution-provided modules to avoid possible breakage with newer and
+    unpackaged versions of modules.
+
+    To that end, this pragma will replace your @INC with only the core and
+    vendor @INC paths, ignoring site_perl and $ENV{PERL5LIB} entirely.
+
+BUGS
+    Please report any bugs or feature requests to "bug-vendorlib at
+    rt.cpan.org", or through the web interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=vendorlib>. I will be
+    notified, and then you'll automatically be notified of progress on your
+    bug as I make changes.
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+        perldoc vendorlib
+
+    You can also look for information at:
+
+    *   RT: CPAN's request tracker
+
+        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=vendorlib>
+
+    *   AnnoCPAN: Annotated CPAN documentation
+
+        <http://annocpan.org/dist/vendorlib>
+
+    *   CPAN Ratings
+
+        <http://cpanratings.perl.org/d/vendorlib>
+
+    *   Search CPAN
+
+        <http://search.cpan.org/dist/vendorlib/>
+
+ACKNOWLEDGEMENTS
+    mxey and jawnsy on oftc #debian-perl helped to hash out the design for
+    this.
+
+AUTHOR
+    Rafael Kitover, "<rkitover at cpan.org>"
+
+LICENSE AND COPYRIGHT
+    Copyright 2011 Rafael Kitover.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of either: the GNU General Public License as published
+    by the Free Software Foundation; or the Artistic License.
+
+    See http://dev.perl.org/licenses/ for more information.
+
