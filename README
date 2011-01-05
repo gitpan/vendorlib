@@ -19,6 +19,9 @@ DESCRIPTION
     To that end, this pragma will replace your @INC with only the core and
     vendor @INC paths, ignoring site_perl and $ENV{PERL5LIB} entirely.
 
+    It is recommended that you put "use vendorlib;" as the first statement
+    in your program, before even "use strict;" and "use warnings;".
+
 BUGS
     Please report any bugs or feature requests to "bug-vendorlib at
     rt.cpan.org", or through the web interface at
