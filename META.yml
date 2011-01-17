@@ -22,8 +22,8 @@ no_index:
 provides:
   vendorlib:
     file: lib/vendorlib.pm
-    version: 0.09
+    version: 0.10
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/vendorlib.git
-version: 0.09
+version: 0.10
